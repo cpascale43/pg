@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICKLE Form</title>
+  </head>
+  <body>
+    <form action="/quote" method="GET">
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" name="gender" id="M" value="male" />
+          <label for="M">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="F" value="female" />
+          <label for="F">Female</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="NB" value="nonbinary" />
+          <label for="NB">Nonbinary</label>
+        </div>
+      </fieldset>
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="18" max="125" />
+
+      <section>
+        <label for="health">Health Condition</label>
+        <select id="health" name="health">
+          <option value="none">None</option>
+          <option value="sleep apnea">Sleep Apnea</option>
+          <option value="heart disease">Heart Disease</option>
+          <option value="allergies">Allergies</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="coverage">Coverage Amount</label>
+        <select id="coverage" name="coverage">
+          <option value="500000">$500,000</option>
+          <option value="750000">$750,000</option>
+          <option value="1000000">$1,000,000</option>
+          <option value="1250000">$1,250,000</option>
+          <option value="1500000">$1,500,000</option>
+          <option value="1750000">$1,750,000</option>
+          <option value="2000000">$2,000,000</option>
+          <option value="2250000">$2,250,000</option>
+          <option value="2500000">$2,500,000</option>
+          <option value="2750000">$2,750,000</option>
+          <option value="3000000">$3,000,000</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="term">Term</label>
+        <select id="term" name="term">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+      </section>
+      <input type="submit" value="Get quote" />
+    </form>
+  </body>
+</html>
